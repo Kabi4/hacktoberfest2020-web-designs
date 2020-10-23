@@ -4,6 +4,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+html{
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+
+}
+
 
 body,
 html {
@@ -16,8 +22,19 @@ html {
   overflow-x: hidden;
 }
 
+body{
+  
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+body > *{
+  scroll-snap-align: start;
+}
+
 section {
   padding: 80px 0;
+  height: 100vh;
 }
 
 /*
